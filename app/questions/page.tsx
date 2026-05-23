@@ -11,7 +11,7 @@ type Question = {
 };
 
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbw0FWoGk_jabp-52guSLdmk_Ej8I8gb_xyNWm5LhK169Vi7Le0g40w8C1bbTd8ldZBC/exec";
+  "https://script.google.com/macros/s/AKfycbyF74vAjK-ozrZCVLCQsUgEbmBT3ekumIlnkAXNQrCHOUf3FhBAqF0eeuC_9ioY2fjl/exec";
 
 const questions: Question[] = [
   {
@@ -24,13 +24,7 @@ const questions: Question[] = [
     id: "ageGroup",
     type: "multi",
     question: "En sık hangi yaş grubundaki çocuklarla çalışıyorsunuz?",
-    options: [
-      "0-3 yaş",
-      "4-6 yaş",
-      "7-12 yaş",
-      "12 yaş üzeri",
-      "Tüm yaş grupları",
-    ],
+    options: ["0-3 yaş", "4-6 yaş", "7-12 yaş", "12 yaş üzeri", "Tüm yaş grupları"],
   },
   {
     id: "monthlyCases",
@@ -42,13 +36,7 @@ const questions: Question[] = [
     id: "workType",
     type: "multi",
     question: "Çalışma şekliniz nedir?",
-    options: [
-      "Bireysel",
-      "Klinik",
-      "Merkez",
-      "Hastane",
-      "Birden fazla yerde",
-    ],
+    options: ["Bireysel", "Klinik", "Merkez", "Hastane", "Birden fazla yerde"],
   },
   {
     id: "sessionType",
@@ -60,13 +48,7 @@ const questions: Question[] = [
     id: "dataStorage",
     type: "multi",
     question: "Hasta bilgilerini şu anda nasıl saklıyorsunuz?",
-    options: [
-      "Kağıt",
-      "Excel",
-      "WhatsApp",
-      "Özel bir yazılım",
-      "Sabit bir sistem yok",
-    ],
+    options: ["Kağıt", "Excel", "WhatsApp", "Özel bir yazılım", "Sabit bir sistem yok"],
   },
   {
     id: "sessionNotes",
@@ -119,8 +101,7 @@ const questions: Question[] = [
   {
     id: "parentView",
     type: "text",
-    question:
-      "Ailelerin uygulamada çocukları hakkında hangi bilgileri görmesini istersiniz?",
+    question: "Ailelerin uygulamada çocukları hakkında hangi bilgileri görmesini istersiniz?",
     placeholder: "Örn: seans notları, gelişim raporu, ev ödevleri",
   },
   {
@@ -138,69 +119,49 @@ const questions: Question[] = [
   {
     id: "gamesBenefit",
     type: "choice",
-    question:
-      "Dijital oyunların terapi sürecine katkı sağlayacağını düşünüyor musunuz?",
+    question: "Dijital oyunların terapi sürecine katkı sağlayacağını düşünüyor musunuz?",
     options: ["Evet", "Hayır", "Kararsızım"],
   },
   {
     id: "gamesType",
     type: "text",
-    question:
-      "Sizce çocuklar için hangi tür oyunlar veya aktiviteler faydalı olur?",
+    question: "Sizce çocuklar için hangi tür oyunlar veya aktiviteler faydalı olur?",
     placeholder: "Kısaca yazınız",
   },
   {
     id: "gamesPlan",
     type: "choice",
-    question:
-      "Oyunların çocuğun terapi planı ve seviyesine göre önerilmesini ister misiniz?",
+    question: "Oyunların çocuğun terapi planı ve seviyesine göre önerilmesini ister misiniz?",
     options: ["Evet", "Hayır", "Olabilir"],
   },
   {
     id: "parentsPay",
     type: "choice",
-    question:
-      "Ailelerin çocuk takibi için aylık abonelik ödeyebileceğini düşünüyor musunuz?",
+    question: "Ailelerin çocuk takibi için aylık abonelik ödeyebileceğini düşünüyor musunuz?",
     options: ["Evet", "Hayır", "Doğru değer sunulursa evet"],
   },
   {
     id: "paidServices",
     type: "multi",
-    question:
-      "Aileleri ödeme yapmaya ikna edebilecek hizmetler neler olabilir?",
-    options: [
-      "Gelişim raporları",
-      "Dijital oyunlar",
-      "Ev ödevleri",
-      "Takip paneli",
-      "Doktorla düzenli iletişim",
-    ],
+    question: "Aileleri ödeme yapmaya ikna edebilecek hizmetler neler olabilir?",
+    options: ["Gelişim raporları", "Dijital oyunlar", "Ev ödevleri", "Takip paneli", "Doktorla düzenli iletişim"],
   },
   {
     id: "price",
     type: "choice",
-    question:
-      "Aileler için uygun aylık abonelik fiyatı sizce ne olabilir?",
-    options: [
-      "100 TL altı",
-      "100-250 TL",
-      "250-500 TL",
-      "500 TL üzeri",
-      "Fikrim yok",
-    ],
+    question: "Aileler için uygun aylık abonelik fiyatı sizce ne olabilir?",
+    options: ["100 TL altı", "100-250 TL", "250-500 TL", "500 TL üzeri", "Fikrim yok"],
   },
   {
     id: "topFeatures",
     type: "text",
-    question:
-      "Sizi bu uygulamayı düzenli kullanmaya ikna edecek en önemli 3 özellik nedir?",
+    question: "Sizi bu uygulamayı düzenli kullanmaya ikna edecek en önemli 3 özellik nedir?",
     placeholder: "3 önemli özelliği yazınız",
   },
   {
     id: "beta",
     type: "choice",
-    question:
-      "İlk test sürümünü deneyen uzmanlar listesine katılmak ister misiniz?",
+    question: "İlk test sürümünü deneyen uzmanlar listesine katılmak ister misiniz?",
     options: ["Evet", "Hayır", "Daha sonra karar vermek isterim"],
   },
 ];
@@ -211,14 +172,24 @@ export default function QuestionsPage() {
   const [isCompleted, setIsCompleted] = useState(false);
   const [error, setError] = useState("");
   const [isSending, setIsSending] = useState(false);
+  const [coreSent, setCoreSent] = useState(false);
+
+  const [coreTeam, setCoreTeam] = useState({
+    name: "",
+    title: "",
+    specialty: "",
+    country: "",
+    city: "",
+    workplace: "",
+    phone: "",
+    email: "",
+    agreement: "",
+  });
 
   const questionsPerPage = 5;
   const totalPages = Math.ceil(questions.length / questionsPerPage);
   const startIndex = currentPage * questionsPerPage;
-  const currentQuestions = questions.slice(
-    startIndex,
-    startIndex + questionsPerPage
-  );
+  const currentQuestions = questions.slice(startIndex, startIndex + questionsPerPage);
   const progress = Math.round(((currentPage + 1) / totalPages) * 100);
 
   function isAnswered(question: Question) {
@@ -253,6 +224,44 @@ export default function QuestionsPage() {
     setAnswers({ ...answers, [id]: value });
   }
 
+  function handleCoreChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) {
+    setCoreTeam({
+      ...coreTeam,
+      [e.target.name]: e.target.value,
+    });
+  }
+
+  async function sendToGoogleSheet(coreTeamData?: typeof coreTeam) {
+    const doctorInfo = localStorage.getItem("doctorInfo");
+
+    const payload = {
+      doctorInfo: doctorInfo ? JSON.parse(doctorInfo) : null,
+      answers,
+      submittedAt: new Date().toISOString(),
+      coreTeam: coreTeamData
+        ? {
+            interested: "yes",
+            ...coreTeamData,
+          }
+        : {
+            interested: "no",
+          },
+    };
+
+    localStorage.setItem("completeSurveyData", JSON.stringify(payload));
+
+    await fetch(GOOGLE_SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+  }
+
   async function handleNext() {
     const currentPageAnswered = currentQuestions.every((question) =>
       isAnswered(question)
@@ -276,33 +285,44 @@ export default function QuestionsPage() {
       return;
     }
 
-    const doctorInfo = localStorage.getItem("doctorInfo");
-
-    const payload = {
-      doctorInfo: doctorInfo ? JSON.parse(doctorInfo) : null,
-      answers,
-      submittedAt: new Date().toISOString(),
-    };
-
-    localStorage.setItem("completeSurveyData", JSON.stringify(payload));
-
     try {
       setIsSending(true);
       setError("");
 
-      await fetch(GOOGLE_SCRIPT_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      await sendToGoogleSheet();
 
       setIsCompleted(true);
     } catch (err) {
       console.error(err);
       setError("Gönderim sırasında bir hata oluştu. Lütfen tekrar deneyiniz.");
+    } finally {
+      setIsSending(false);
+    }
+  }
+
+  async function handleCoreSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    if (
+      !coreTeam.name ||
+      !coreTeam.phone ||
+      !coreTeam.email ||
+      coreTeam.agreement !== "yes"
+    ) {
+      setError("Core Team başvurusu için ad, telefon, e-posta ve onay alanları gereklidir.");
+      return;
+    }
+
+    try {
+      setIsSending(true);
+      setError("");
+
+      await sendToGoogleSheet(coreTeam);
+
+      setCoreSent(true);
+    } catch (err) {
+      console.error(err);
+      setError("Core Team bilgileri gönderilirken bir hata oluştu.");
     } finally {
       setIsSending(false);
     }
@@ -319,7 +339,7 @@ export default function QuestionsPage() {
 
   if (isCompleted) {
     return (
-      <main className="relative flex min-h-screen items-center justify-center overflow-hidden bg-slate-950 px-4 py-10 text-white">
+      <main className="relative min-h-screen overflow-hidden bg-slate-950 px-4 py-10 text-white sm:px-6 lg:px-8">
         <div className="confetti confetti-1" />
         <div className="confetti confetti-2" />
         <div className="confetti confetti-3" />
@@ -329,11 +349,7 @@ export default function QuestionsPage() {
         <div className="confetti confetti-7" />
         <div className="confetti confetti-8" />
 
-        <div className="absolute left-10 top-10 h-28 w-28 animate-bounce rounded-full bg-emerald-400/30 blur-2xl" />
-        <div className="absolute right-10 top-24 h-36 w-36 animate-pulse rounded-full bg-blue-400/30 blur-2xl" />
-        <div className="absolute bottom-10 left-1/3 h-32 w-32 animate-bounce rounded-full bg-cyan-400/20 blur-2xl" />
-
-        <section className="animate-celebrate relative mx-auto max-w-2xl rounded-3xl border border-emerald-400/30 bg-white/10 p-8 text-center shadow-2xl backdrop-blur">
+        <section className="animate-celebrate relative mx-auto max-w-5xl rounded-3xl border border-emerald-400/30 bg-white/10 p-6 text-center shadow-2xl backdrop-blur sm:p-8">
           <div className="mx-auto mb-6 flex h-24 w-24 animate-pop items-center justify-center rounded-full bg-emerald-500 text-5xl shadow-lg shadow-emerald-500/40">
             ✓
           </div>
@@ -347,27 +363,168 @@ export default function QuestionsPage() {
           </h1>
 
           <p className="mb-5 leading-8 text-slate-200">
-            Değerli katkınız için teşekkür ederiz. Yanıtlarınız, projenin
-            geliştirme sürecinde dikkatle değerlendirilecektir.
+            Yanıtlarınız başarıyla kaydedildi. Katkınız, projenin geliştirme
+            sürecinde dikkatle değerlendirilecektir.
           </p>
 
-          <div className="mb-5 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-5">
-            <p className="leading-8 text-emerald-100">
-              Proje sürecini takip edebilmeniz ve ilk test sürümü hakkında bilgi
-              alabilmeniz için sizinle WhatsApp üzerinden iletişime geçilecektir.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-blue-400/30 bg-blue-500/10 p-5">
+          <div className="mb-6 rounded-2xl border border-blue-400/30 bg-blue-500/10 p-5">
             <p className="leading-8 text-blue-100">
               Proje süreci, UMMAHTECH ekibi ve Proje Yöneticisi Mühendis Rawda
               İspitan tarafından yakından takip edilmektedir.
             </p>
           </div>
 
-          <p className="mt-6 text-sm text-slate-400">
-            İlk uzman kullanıcılarımız arasında yer alma fırsatınız için mutluyuz.
-          </p>
+          <div className="mt-8 grid gap-6 text-left lg:grid-cols-2">
+            <div className="rounded-3xl border border-emerald-400/30 bg-slate-900/70 p-6">
+              <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-emerald-300">
+                CORE TEAM
+              </p>
+
+              <h2 className="mb-4 text-2xl font-bold text-white">
+                İlk 15 Uzman Doktordan Biri Olmak İster misiniz?
+              </h2>
+
+              <p className="mb-5 leading-8 text-slate-300">
+                Projenin geliştirme süreci 3 ay sürecektir. Seçilecek 15 uzman
+                doktor, özel takip ekibinde yer alacak ve ürünün gelişimine
+                doğrudan katkı sağlayacaktır.
+              </p>
+
+              <ul className="space-y-3 text-sm leading-7 text-slate-200">
+                <li>✓ 15 doktordan oluşan özel Core Team içinde yer alma</li>
+                <li>✓ WhatsApp grubunda proje sürecini yakından takip etme</li>
+                <li>✓ Her 2 haftada bir güncellemeleri görme</li>
+                <li>✓ Geliştirme sürecinde doğrudan feedback verme</li>
+                <li>✓ İlk test sürümünü ücretsiz deneme</li>
+                <li>✓ 6 ay boyunca sistemi ücretsiz kullanma ve aylık feedback verme</li>
+                <li>✓ Resmi lansmandan sonra final sürümü ömür boyu ücretsiz kullanma</li>
+              </ul>
+            </div>
+
+            <div className="rounded-3xl border border-white/10 bg-white/10 p-6">
+              {coreSent ? (
+                <div className="flex h-full flex-col items-center justify-center text-center">
+                  <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500 text-3xl">
+                    ✓
+                  </div>
+                  <h2 className="mb-3 text-2xl font-bold">
+                    Core Team başvurunuz alındı!
+                  </h2>
+                  <p className="leading-8 text-slate-300">
+                    Sizinle WhatsApp üzerinden iletişime geçilecektir.
+                  </p>
+                </div>
+              ) : (
+                <>
+                  <h2 className="mb-2 text-2xl font-bold">
+                    Core Team Başvuru Formu
+                  </h2>
+
+                  <p className="mb-5 text-sm leading-7 text-slate-300">
+                    İlk 15 uzman takip ekibine dahil olmak isterseniz lütfen
+                    iletişim bilgilerinizi paylaşınız.
+                  </p>
+
+                  {error && (
+                    <div className="mb-4 rounded-2xl border border-red-400/30 bg-red-500/10 p-4 text-red-200">
+                      {error}
+                    </div>
+                  )}
+
+                  <form onSubmit={handleCoreSubmit} className="grid gap-4">
+                    <input
+                      name="name"
+                      placeholder="Ad Soyad *"
+                      value={coreTeam.name}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <input
+                      name="title"
+                      placeholder="Ünvan"
+                      value={coreTeam.title}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <input
+                      name="specialty"
+                      placeholder="Uzmanlık Alanı"
+                      value={coreTeam.specialty}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <div className="grid gap-4 sm:grid-cols-2">
+                      <input
+                        name="country"
+                        placeholder="Ülke"
+                        value={coreTeam.country}
+                        onChange={handleCoreChange}
+                        className="input-style"
+                      />
+
+                      <input
+                        name="city"
+                        placeholder="Şehir"
+                        value={coreTeam.city}
+                        onChange={handleCoreChange}
+                        className="input-style"
+                      />
+                    </div>
+
+                    <input
+                      name="workplace"
+                      placeholder="Çalıştığınız Kurum / Klinik"
+                      value={coreTeam.workplace}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <input
+                      name="phone"
+                      type="tel"
+                      placeholder="WhatsApp Telefon Numaranız *"
+                      value={coreTeam.phone}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <input
+                      name="email"
+                      type="email"
+                      placeholder="E-posta Adresiniz *"
+                      value={coreTeam.email}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    />
+
+                    <select
+                      name="agreement"
+                      value={coreTeam.agreement}
+                      onChange={handleCoreChange}
+                      className="input-style"
+                    >
+                      <option value="">
+                        Core Team’e katılmayı kabul ediyor musunuz? *
+                      </option>
+                      <option value="yes">Evet, kabul ediyorum</option>
+                      <option value="no">Hayır</option>
+                    </select>
+
+                    <button
+                      type="submit"
+                      disabled={isSending}
+                      className="rounded-xl bg-emerald-500 px-8 py-4 font-semibold text-white shadow-lg shadow-emerald-500/30 transition hover:-translate-y-1 hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      {isSending ? "Gönderiliyor..." : "Core Team’e Başvur"}
+                    </button>
+                  </form>
+                </>
+              )}
+            </div>
+          </div>
         </section>
       </main>
     );

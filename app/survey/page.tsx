@@ -52,15 +52,14 @@ export default function SurveyPage() {
           </h1>
 
           <p className="mb-5 text-lg leading-8 text-slate-300">
-            Bu form, dil ve konuşma terapistleri için geliştirilen dijital takip
-            platformunun ilk aşaması kapsamında hazırlanmıştır.
+            Ankete başlamak için yalnızca adınızı yazmanız yeterlidir. Diğer
+            bilgiler isteğe bağlıdır.
           </p>
 
           <div className="rounded-2xl border border-blue-400/30 bg-white/10 p-5 backdrop-blur">
             <p className="leading-8 text-slate-200">
-              Telefon numaranız, proje sürecini takip edebilmeniz ve ilk test
-              sürümüyle ilgili bilgilendirmeleri alabilmeniz için WhatsApp takip
-              grubuna eklenmek amacıyla kullanılacaktır.
+              Anket sonunda, projenin ilk 15 uzman takip ekibinde yer almak
+              isterseniz iletişim bilgilerinizi paylaşabilirsiniz.
             </p>
           </div>
         </div>
@@ -69,24 +68,20 @@ export default function SurveyPage() {
           <h2 className="mb-2 text-2xl font-bold">Doktor Bilgileri</h2>
 
           <p className="mb-6 text-sm leading-7 text-slate-300">
-            Lütfen bilgilerinizi eksiksiz doldurunuz.
+            Sadece ad soyad alanı zorunludur. Diğer alanları isterseniz
+            doldurabilirsiniz.
           </p>
 
           <form onSubmit={handleSubmit} className="grid gap-4">
             <input
               name="doctorName"
-              placeholder="Ad Soyad"
+              placeholder="Ad Soyad *"
               onChange={handleChange}
               className="input-style"
               required
             />
 
-            <select
-              name="title"
-              onChange={handleChange}
-              className="input-style"
-              required
-            >
+            <select name="title" onChange={handleChange} className="input-style">
               <option value="">Ünvanınızı seçiniz</option>
               <option value="doctor">Doktor</option>
               <option value="therapist">Dil ve Konuşma Terapisti</option>
@@ -99,7 +94,6 @@ export default function SurveyPage() {
               placeholder="Uzmanlık Alanı"
               onChange={handleChange}
               className="input-style"
-              required
             />
 
             <div className="grid gap-4 sm:grid-cols-2">
@@ -138,7 +132,6 @@ export default function SurveyPage() {
               placeholder="WhatsApp Telefon Numaranız"
               onChange={handleChange}
               className="input-style"
-              required
             />
 
             <input
@@ -153,7 +146,6 @@ export default function SurveyPage() {
               name="whatsappAgreement"
               onChange={handleChange}
               className="input-style"
-              required
             >
               <option value="">
                 WhatsApp takip grubuna eklenmeyi kabul ediyor musunuz?
@@ -166,7 +158,7 @@ export default function SurveyPage() {
               type="submit"
               className="mt-3 rounded-xl bg-blue-500 p-4 font-semibold text-white shadow-lg shadow-blue-500/30 transition duration-300 hover:-translate-y-1 hover:bg-blue-600"
             >
-              Bilgileri Kaydet ve Devam Et
+              Ankete Devam Et
             </button>
           </form>
         </div>
